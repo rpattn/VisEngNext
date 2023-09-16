@@ -4,8 +4,8 @@ import * as d3 from "d3";
 
 function drawChart(svgRef) {
   const data = [12, 5, 6, 6, 10, 10];
-  const h = 180;
-  const w = 250;
+  const h = 300;
+  const w = 300;
   const svg = d3.select(svgRef.current);
 
   svg
@@ -34,8 +34,8 @@ const ChartTestComp = () => {
   }, [svg]);
 
   return (
-    <div id="chart" className="chartTestComp">
-      <svg ref={svg} />
+    <div id="chart" className="chartTestComp m-6">
+      <svg ref={svg} className="svg1"/>
     </div>
   );
 };

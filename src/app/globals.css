@@ -87,4 +87,11 @@ body {
 
 .chartTestComp {
   color: teal;
+  display: flex;
+}
+
+.svg1 {
+  height: 300px;
+  width: 300px;
+  display: flex;
 }
