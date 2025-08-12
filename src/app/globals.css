@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 14, 19, 20;
+    --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.logoParent {
+  display: flex !important;
+  width: 16rem;
+}
+
+.logoParentDiv {
+  aspect-ratio: 4 / 1;
+}
+
+.navBarParent {
+  padding: 0;
+  margin: 0;
+}
+
+.navButton {
+  display: contents;
+}
+
+.navButtonIn {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+
+.logo {
+  color: aquamarine;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+}
+
+.navDropChange {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background: teal;
+  padding-top: 1rem;
+}
+
+
+
+
+
+.content {
+  display: flex;
+}
+
+.splashCard {
+  padding-top: 1rem;
+}
+
+
+.chartTestComp {
+  color: teal;
+  display: flex;
+}
+
+.svg1 {
+  height: 300px;
+  width: 300px;
+  display: flex;
+}
